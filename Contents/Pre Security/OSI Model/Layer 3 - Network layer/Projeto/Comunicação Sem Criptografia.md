@@ -106,6 +106,6 @@ Para analisar o tráfego de rede sem criptografia, utilizei o Wireshark no Kali 
     ```
 6. Analisar os Pacotes: Examinei os detalhes dos pacotes (endereços IP de origem/destino, tipo de protocolo, tempo de resposta etc.) para confirmar que os dados estão sendo transmitidos sem criptografia.
 
-## Conclusão e Próximos Passos
+## Conclusão
 
-Nesta fase, o foco foi analisar a comunicação de rede sem criptografia e demonstrar como o tráfego pode ser capturado e visualizado com o Wireshark. Essa análise revela a transparência dos dados transmitidos, evidenciando riscos de segurança na ausência de proteção. No próximo README, documentarei a implementação da criptografia na comunicação entre as máquinas e repetirei os testes. Assim, poderei comparar os resultados e evidenciar como a criptografia protege os dados, impedindo que informações sensíveis sejam visualizadas diretamente.
+Nesta fase, o foco foi analisar a comunicação de rede sem criptografia e demonstrar como o tráfego pode ser capturado e visualizado com o Wireshark. Essa análise revela a transparência dos dados transmitidos, evidenciando riscos de segurança na ausência de proteção.
