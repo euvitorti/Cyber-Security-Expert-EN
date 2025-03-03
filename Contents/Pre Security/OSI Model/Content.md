@@ -32,3 +32,9 @@ Compreender o Modelo OSI permite aos profissionais de cibersegurança **ter uma 
 ## Conclusão
 
 O Modelo OSI é uma base essencial para entender como as redes funcionam e como elas podem ser atacadas. Estudá-lo proporciona uma melhor compreensão dos pontos fracos e fortes das redes, o que é crucial para qualquer especialista em cibersegurança. A partir dessa base, é possível aplicar práticas de segurança adequadas em cada camada da rede, garantindo maior proteção contra ameaças cibernéticas.
+
+---
+
+## Aprenda mais
+
+- *[O que é o modelo OSI?](https://www.cloudflare.com/pt-br/learning/ddos/glossary/open-systems-interconnection-model-osi/)*
