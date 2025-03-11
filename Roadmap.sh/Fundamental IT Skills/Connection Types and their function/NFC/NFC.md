@@ -1,38 +1,38 @@
-# NFC e Cibersegurança
+# NFC and Cybersecurity
 
-**NFC (Near Field Communication)** é uma tecnologia de comunicação sem fio de curto alcance que permite a troca de dados entre dispositivos próximos, geralmente a uma distância de até 10 centímetros. É amplamente utilizada em pagamentos móveis (como Google Pay ou Apple Pay), cartões de transporte público, bilhetes de entrada e outras formas de autenticação de proximidade.
+**NFC (Near Field Communication)** is a short-range wireless communication technology that allows data exchange between nearby devices, typically within a distance of up to 10 centimeters. It is widely used in mobile payments (such as Google Pay or Apple Pay), public transport cards, entry tickets, and other forms of proximity authentication.
 
-## Importância de Aprender sobre NFC em Cibersegurança
+## Importance of Learning about NFC in Cybersecurity
 
-- **Crescimento da utilização**: Com o aumento dos pagamentos móveis e da Internet das Coisas (IoT), os dispositivos NFC estão se tornando cada vez mais comuns. Aprender sobre a segurança desses dispositivos e das conexões NFC é crucial para proteger dados sensíveis.
-- **Vulnerabilidades de proximidade**: Embora a comunicação seja limitada a curtas distâncias, ela não é invulnerável a ataques. O foco da cibersegurança deve ser proteger os dados transmitidos.
-- **Riscos com dispositivos maliciosos**: Há o risco de dispositivos NFC falsificados ou maliciosos que podem ser usados para interceptar ou modificar a comunicação entre dois dispositivos legítimos.
+- **Growing usage**: With the rise of mobile payments and the Internet of Things (IoT), NFC-enabled devices are becoming more common. Learning about the security of these devices and NFC connections is crucial to protect sensitive data.
+- **Proximity vulnerabilities**: Although communication is limited to short distances, it is not immune to attacks. The focus of cybersecurity should be on protecting the transmitted data.
+- **Risks with malicious devices**: There is a risk of counterfeit or malicious NFC devices that could be used to intercept or alter communication between two legitimate devices.
 
-## Tipos de Vulnerabilidades em NFC
+## Types of Vulnerabilities in NFC
 
-1. **Sniffing (Intercepção de Dados)**:
-   - A comunicação NFC pode ser interceptada por dispositivos próximos. Se os dados não forem criptografados corretamente, um atacante pode capturar informações sensíveis, como dados bancários ou credenciais de acesso.
-   
-2. **Replay Attacks (Ataques de Repetição)**:
-   - Um atacante pode gravar a comunicação entre dois dispositivos legítimos e retransmiti-la para realizar ações não autorizadas, como efetuar pagamentos ou acessar sistemas.
+1. **Sniffing (Data Interception)**:
+   - NFC communication can be intercepted by nearby devices. If the data is not properly encrypted, an attacker could capture sensitive information, such as banking data or access credentials.
 
-3. **Falsificação de Dispositivos**:
-   - Dispositivos NFC falsificados podem tentar se passar por dispositivos legítimos, realizando transações fraudulentas.
+2. **Replay Attacks**:
+   - An attacker can record communication between two legitimate devices and retransmit it to perform unauthorized actions, such as making payments or accessing systems.
+
+3. **Device Spoofing**:
+   - Counterfeit NFC devices may try to impersonate legitimate devices, carrying out fraudulent transactions.
 
 4. **Denial of Service (DoS)**:
-   - Um atacante pode sobrecarregar um dispositivo NFC com solicitações excessivas, tornando-o incapaz de responder ou funcionar corretamente.
+   - An attacker could overwhelm an NFC device with excessive requests, making it unable to respond or function correctly.
 
-## Ataques a Conexões NFC
+## Attacks on NFC Connections
 
-- **Ataques de Man-in-the-Middle (MITM)**:
-  - Um atacante se coloca entre dois dispositivos NFC e intercepta ou altera a comunicação. Se a criptografia não for usada corretamente, os dados podem ser lidos ou manipulados.
+- **Man-in-the-Middle (MITM) Attacks**:
+  - An attacker places themselves between two NFC devices and intercepts or alters the communication. If encryption is not properly implemented, the data can be read or manipulated.
 
-- **Trojan NFC**:
-  - Malwares instalados em dispositivos móveis ou leitores NFC permitem que um atacante controle ou monitore as transações sem que o usuário saiba.
+- **NFC Trojan**:
+  - Malware installed on mobile devices or NFC readers allows an attacker to control or monitor transactions without the user’s knowledge.
 
-- **Ataques de Força Bruta**:
-  - Um atacante tenta adivinhar as credenciais ou chaves de autenticação em sistemas NFC se não houver proteções adequadas, como limites de tentativas ou algoritmos de criptografia fortes.
+- **Brute Force Attacks**:
+  - An attacker attempts to guess credentials or authentication keys in NFC systems if there are no proper protections in place, such as attempt limits or strong encryption algorithms.
 
-## Por Que Aprender sobre NFC em Cibersegurança
+## Why Learn about NFC in Cybersecurity
 
-Com o aumento do uso de dispositivos móveis e a digitalização de pagamentos e autenticação, as tecnologias NFC se tornaram um alvo para criminosos. Conhecer as vulnerabilidades e os métodos de proteção dessas tecnologias ajuda a mitigar riscos e a garantir a segurança de dados e transações. A cibersegurança é uma área em constante evolução, e a aprendizagem sobre NFC é essencial para proteger informações valiosas no contexto de pagamentos, identidade e IoT.
+With the increased use of mobile devices and the digitization of payments and authentication, NFC technologies have become a target for criminals. Understanding the vulnerabilities and protection methods of these technologies helps mitigate risks and ensure the security of data and transactions. Cybersecurity is an ever-evolving field, and learning about NFC is essential to protect valuable information in the context of payments, identity, and IoT.
