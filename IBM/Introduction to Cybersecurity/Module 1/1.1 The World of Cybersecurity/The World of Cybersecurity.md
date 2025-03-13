@@ -1,8 +1,8 @@
-# 🛡️ Cibersegurança: Protegendo o Mundo Digital
+# Cibersegurança: Protegendo o Mundo Digital
 
 A cibersegurança é a prática contínua de proteger indivíduos, organizações e governos contra ataques digitais. Ela envolve a defesa de sistemas conectados em rede e a proteção de dados contra uso não autorizado, roubo ou danos. Em um mundo cada vez mais digital, manter essas informações seguras é essencial para preservar nossa privacidade, integridade e disponibilidade de dados.
 
-## 🧠 Por Que a Cibersegurança é Tão Importante?
+## Por Que a Cibersegurança é Tão Importante?
 
 Vivemos em uma era onde grande parte da nossa vida pessoal e profissional está armazenada digitalmente. Desde informações bancárias até dados médicos, quase tudo está online — e isso torna a proteção desses dados crucial. Sem práticas adequadas de cibersegurança, corremos riscos como:
 
@@ -13,11 +13,14 @@ Vivemos em uma era onde grande parte da nossa vida pessoal e profissional está 
 
 A segurança digital não protege apenas empresas ou governos — ela protege você, sua privacidade e seu dia a dia.
 
-## 🔒 Três Níveis de Proteção
+---
+
+## Três Níveis de Proteção
 
 ### 1️⃣ Proteção de Dados Pessoais
 
 **O que são dados pessoais?**  
+
 São informações que podem identificar você, como:  
 - Nome completo  
 - Endereço  
@@ -32,8 +35,6 @@ São informações que podem identificar você, como:
 - ✅ Crie senhas fortes e únicas para cada plataforma.  
 - ✅ Ative a autenticação em dois fatores sempre que possível.  
 
----
-
 ### 2️⃣ Onde Seus Dados Estão?
 
 Pense em quantas vezes você acessa seus dados pessoais através de dispositivos digitais:  
@@ -44,9 +45,8 @@ Pense em quantas vezes você acessa seus dados pessoais através de dispositivos
 Além disso, dispositivos como smartwatches e rastreadores de atividade coletam dados sobre sua saúde, rotina e comportamento. Isso aumenta a conveniência, mas também expõe mais informações pessoais ao ambiente digital.
 
 **Redes sociais e privacidade:**  
-Empresas de redes sociais geram receita vendendo anúncios personalizados com base nos dados dos usuários. Embora chamem isso de “compartilhamento” com parceiros de marketing, essa prática levanta dúvidas sobre o preço da nossa privacidade em troca de serviços gratuitos.
 
----
+Empresas de redes sociais geram receita vendendo anúncios personalizados com base nos dados dos usuários. Embora chamem isso de “compartilhamento” com parceiros de marketing, essa prática levanta dúvidas sobre o preço da nossa privacidade em troca de serviços gratuitos.
 
 ### 3️⃣ Proteção Organizacional e Governamental
 
