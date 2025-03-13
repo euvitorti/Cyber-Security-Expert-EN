@@ -1,80 +1,80 @@
-# Camada 4 do Modelo OSI — Camada de Transporte
+# Layer 4 of the OSI Model — Transport Layer
 
-A camada 4 do modelo OSI, conhecida como **Camada de Transporte**, é responsável por gerenciar a comunicação de dados entre dispositivos em uma rede. Ela garante que as mensagens sejam entregues de forma confiável, ordenada e sem erros, quando necessário. Essa camada trabalha diretamente com os protocolos TCP e UDP, que oferecem diferentes abordagens para a transmissão de dados.
+Layer 4 of the OSI model, known as the **Transport Layer**, is responsible for managing data communication between devices on a network. It ensures that messages are delivered reliably, in order, and without errors when necessary. This layer works directly with the TCP and UDP protocols, which offer different approaches for data transmission.
 
-## Principais Funções da Camada de Transporte
+## Main Functions of the Transport Layer
 
-- **Multiplexação e Desmultiplexação:** 
-  - Permite que múltiplas aplicações utilizem a mesma conexão de rede simultaneamente, diferenciando cada comunicação através de portas.
+- **Multiplexing and Demultiplexing:** 
+  - Allows multiple applications to use the same network connection simultaneously, distinguishing each communication through ports.
   
-- **Controle de Fluxo:** 
-  - Regula a quantidade de dados enviados para evitar sobrecarga ou perda de pacotes.
+- **Flow Control:** 
+  - Regulates the amount of data sent to avoid congestion or packet loss.
 
-- **Controle de Erros:** 
-  - Verifica se os dados chegaram corretamente e solicita retransmissão em caso de perda ou erro (no caso do TCP).
+- **Error Control:** 
+  - Verifies whether the data arrived correctly and requests retransmission in case of loss or error (for TCP).
 
-- **Segmentação e Reagrupamento:** 
-  - Divide grandes volumes de dados em pacotes menores (segmentos) para facilitar o envio e, ao receber, reagrupa-os na ordem correta.
+- **Segmentation and Reassembly:** 
+  - Breaks large volumes of data into smaller packets (segments) for easier transmission and reassembles them in the correct order when received.
 
-## Protocolos da Camada de Transporte
+## Transport Layer Protocols
 
-### 1. **TCP (Transmission Control Protocol)** — Protocolo Orientado à Conexão
+### 1. **TCP (Transmission Control Protocol)** — Connection-Oriented Protocol
 
-- **Confiável:** Garante a entrega de pacotes de forma ordenada e sem perda.
-- **Estabelecimento de Conexão:** Utiliza o *Three-Way Handshake* (aperto de mão de três vias) para iniciar a comunicação.
-- **Controle de Congestionamento:** Ajusta a velocidade de envio para evitar sobrecarga na rede.
-- **Exemplos de Uso:** HTTP, HTTPS, FTP, SMTP (envio de e-mail).
+- **Reliable:** Ensures packet delivery in order and without loss.
+- **Connection Establishment:** Uses the *Three-Way Handshake* to initiate communication.
+- **Congestion Control:** Adjusts the sending speed to avoid network overload.
+- **Examples of Use:** HTTP, HTTPS, FTP, SMTP (email sending).
 
-**Vantagens:**
-- Entrega garantida de dados.
-- Verificação de erros e retransmissão automática.
-- Ordem de pacotes preservada.
+**Advantages:**
+- Guaranteed data delivery.
+- Error checking and automatic retransmission.
+- Order of packets preserved.
 
-**Desvantagens:**
-- Mais lento devido ao processo de verificação e confirmação.
-- Requer mais recursos da máquina (memória e processamento).
-
----
-
-### 2. **UDP (User Datagram Protocol)** — Protocolo Não Orientado à Conexão
-
-- **Rápido:** Envia pacotes sem estabelecer conexão prévia.
-- **Sem Garantia de Entrega:** Não verifica se os pacotes chegaram corretamente.
-- **Baixa Latência:** Ideal para transmissões onde a velocidade é mais importante que a precisão.
-- **Exemplos de Uso:** Streaming de vídeo, VoIP, jogos online, DNS.
-
-**Vantagens:**
-- Mais rápido e eficiente para transmissões contínuas.
-- Requer menos recursos.
-
-**Desvantagens:**
-- Possível perda de pacotes.
-- Pacotes podem chegar fora de ordem.
-- Sem confirmação de recebimento.
+**Disadvantages:**
+- Slower due to the checking and acknowledgment process.
+- Requires more machine resources (memory and processing).
 
 ---
 
-## Exemplo Prático
+### 2. **UDP (User Datagram Protocol)** — Connectionless Protocol
 
-Imagine que você está fazendo uma chamada de vídeo:
+- **Fast:** Sends packets without establishing a prior connection.
+- **No Delivery Guarantee:** Does not check if packets arrive correctly.
+- **Low Latency:** Ideal for transmissions where speed is more important than accuracy.
+- **Examples of Use:** Video streaming, VoIP, online games, DNS.
 
-- **Com TCP:** A chamada seria mais estável, mas com atrasos maiores, porque os pacotes seriam reordenados e re-enviados se faltasse algum.
-- **Com UDP:** A chamada tem menor atraso, mas pode ter cortes de voz ou imagem, já que pacotes perdidos não são retransmitidos.
+**Advantages:**
+- Faster and more efficient for continuous transmissions.
+- Requires fewer resources.
 
----
-
-## Conclusão
-
-A Camada de Transporte (Camada 4) é crucial para definir como os dados são transmitidos e recebidos em uma rede. A escolha entre TCP e UDP depende das necessidades da aplicação:
-
-- **TCP:** Quando a confiabilidade é mais importante que a velocidade.
-- **UDP:** Quando a velocidade é mais importante que a precisão.
-
-Ambos os protocolos são essenciais para diferentes tipos de comunicação, cada um com suas vantagens e desvantagens.
+**Disadvantages:**
+- Possible packet loss.
+- Packets may arrive out of order.
+- No acknowledgment of receipt.
 
 ---
 
-## Aprenda mais
+## Practical Example
 
-- *[O que é TCP/IP?](https://www.cloudflare.com/pt-br/learning/ddos/glossary/tcp-ip/)*
-- *[O que é UDP?](https://www.cloudflare.com/pt-br/learning/ddos/glossary/user-datagram-protocol-udp/)*
+Imagine you are making a video call:
+
+- **With TCP:** The call would be more stable, but with more delay, because packets would be reordered and retransmitted if any were missing.
+- **With UDP:** The call would have lower latency, but there might be voice or video drops, as lost packets are not retransmitted.
+
+---
+
+## Conclusion
+
+The Transport Layer (Layer 4) is crucial for defining how data is transmitted and received over a network. The choice between TCP and UDP depends on the needs of the application:
+
+- **TCP:** When reliability is more important than speed.
+- **UDP:** When speed is more important than accuracy.
+
+Both protocols are essential for different types of communication, each with its advantages and disadvantages.
+
+---
+
+## Learn More
+
+- *[What is TCP/IP?](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/)*
+- *[What is UDP?](https://www.cloudflare.com/learning/ddos/glossary/user-datagram-protocol-udp/)*
