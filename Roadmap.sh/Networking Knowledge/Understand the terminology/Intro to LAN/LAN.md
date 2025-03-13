@@ -1,129 +1,127 @@
-# O que é LAN?
+# What is a LAN?
 
-**LAN** é a sigla para **Local Area Network**, que em português significa **Rede Local**. Trata-se de uma rede que conecta dispositivos em uma área geográfica limitada, como uma residência, escritório ou campus universitário.
+**LAN** stands for **Local Area Network**. It refers to a network that connects devices in a limited geographical area, such as a home, office, or university campus.
 
-## Características Principais
+## Key Characteristics
 
-- **Escopo Limitado:**  
-  Geralmente cobre uma área pequena, permitindo a conexão de diversos dispositivos próximos fisicamente.
+- **Limited Scope:**  
+  Typically covers a small area, allowing multiple devices to be connected within close physical proximity.
 
-- **Alta Velocidade:**  
-  Devido às curtas distâncias, as taxas de transferência são altas e a latência é baixa.
+- **High Speed:**  
+  Due to short distances, transfer rates are high and latency is low.
 
-- **Gerenciamento Local:**  
-  A administração da rede pode ser feita de forma centralizada, facilitando o controle e a manutenção.
+- **Local Management:**  
+  The network can be centrally managed, making it easier to control and maintain.
 
-- **Compartilhamento de Recursos:**  
-  Permite que dispositivos compartilhem impressoras, arquivos, acesso à internet e outros recursos.
+- **Resource Sharing:**  
+  Allows devices to share printers, files, internet access, and other resources.
 
-## Exemplos de Aplicação
+## Examples of Application
 
-- **Redes Domésticas:**  
-  Conexão de computadores, smartphones, smart TVs e outros dispositivos dentro de uma casa.
+- **Home Networks:**  
+  Connecting computers, smartphones, smart TVs, and other devices within a household.
 
-- **Redes Empresariais:**  
-  Conexão de estações de trabalho, servidores e dispositivos em um ambiente corporativo.
+- **Business Networks:**  
+  Connecting workstations, servers, and devices within a corporate environment.
 
-- **Ambientes Educacionais:**  
-  Redes utilizadas em escolas e universidades para facilitar a comunicação e o compartilhamento de dados.
+- **Educational Environments:**  
+  Networks used in schools and universities to facilitate communication and data sharing.
 
-## LAN x WAN
+## LAN vs WAN
 
-- **LAN (Rede Local):**  
-  - Cobre uma área geográfica limitada.  
-  - Alta velocidade e baixa latência.  
-  - Geralmente administrada de forma local.
+- **LAN (Local Area Network):**  
+  - Covers a limited geographical area.  
+  - High speed and low latency.  
+  - Usually managed locally.
 
 - **WAN (Wide Area Network):**  
-  - Cobre grandes áreas geográficas, como cidades, países ou continentes.  
-  - Velocidades podem ser menores e a latência maior.  
-  - Geralmente composta por múltiplas LANs interconectadas.
+  - Covers large geographical areas, such as cities, countries, or continents.  
+  - Speeds can be lower and latency higher.  
+  - Typically consists of multiple interconnected LANs.
 
-## Exemplo Prático: Configurando e Testando uma LAN Virtual
+## Practical Example: Configuring and Testing a Virtual LAN
 
-Neste exemplo, utilizamos um ambiente com:
+In this example, we use an environment with:
 
-- **Hospedeiro:** Windows 10  
-- **Máquina Virtual:** Kali Linux rodando no VirtualBox  
-- **Configurações de Rede:**  
-  - Adaptador 1 configurado como **Rede Somente para Host** (para comunicação direta entre Windows e Kali)
-  - Adaptador 2 configurado como **NAT** (para acesso à internet)  
+- **Host:** Windows 10  
+- **Virtual Machine:** Kali Linux running on VirtualBox  
+- **Network Settings:**  
+  - Adapter 1 set as **Host-Only Network** (for direct communication between Windows and Kali)  
+  - Adapter 2 set as **NAT** (for internet access)
 
-### 1. Configurando o VirtualBox
+### 1. Configuring VirtualBox
 
-1. **Abra o VirtualBox** e selecione sua máquina virtual, (escolha um sistema), estou usando neste exemplo o Kali Linux.
-2. Clique em **Configurações** e vá para a aba **Rede**.
-3. No **Adaptador 1**,  ative a opção e selecione **Rede Somente para Host** para criar uma LAN virtual isolada.
-4. No **Adaptador 2**,  certifique-se de que está selecionado **NAT** para permitir acesso à internet.
+1. **Open VirtualBox** and select your virtual machine (in this example, Kali Linux).
+2. Click on **Settings** and go to the **Network** tab.
+3. In **Adapter 1**, enable the option and select **Host-Only Network** to create an isolated virtual LAN.
+4. In **Adapter 2**, ensure **NAT** is selected to allow internet access.
 
-### 2. Verificando as Configurações de IP
+### 2. Checking IP Settings
 
-- **No Windows (Hospedeiro):**  
-  Abra o Prompt de Comando e execute:
+- **On Windows (Host):**  
+  Open Command Prompt and run:
 ```
   ipconfig
 ```
-Verifique que a interface associada à rede "Host-Only" possui um IP (ex.: 192.168.56.1).
+Check that the interface associated with the "Host-Only" network has an IP (e.g., 192.168.56.1).
 
-- **No Kali Linux (Máquina Virtual):**
-Abra um terminal e execute:
+- **On Kali Linux (Virtual Machine):**  
+  Open a terminal and run:
 ```
     ip addr
 ```
-Confirme que a interface da rede "Host-Only" possui um IP na mesma faixa (ex.: 192.168.56.101).
+Check that the interface associated with the "Host-Only" network has an IP (e.g., 192.168.56.1).
 
----
-
-### 3. Testando a Conexão com Ping
-1. **Do Windows para o Kali:**
-No Prompt de Comando do Windows, execute:
+- **On Kali Linux (Virtual Machine):**  
+  Open a terminal and run:
 ```
     ping 192.168.56.101
 ```
-Você deve ver respostas indicando que os pacotes foram enviados e recebidos com sucesso.
+You should see responses indicating that the packets were sent and received successfully.
 
-2. **Do Kali para o Windows:**
-No terminal do Kali, execute:
+2. **From Kali to Windows:**  
+In Kali terminal, run:
 ```
     ping 192.168.56.1
 ```
-Confirme que o Windows responde aos pings.
+Verify that Windows responds to the pings.
 
-### 4. Levantando um Servidor HTTP no Kali
-1. No Kali Linux, abra um terminal e execute:
+### 4. Starting an HTTP Server on Kali
 
+1. On Kali Linux, open a terminal and run:
 ```
     python3 -m http.server 8080
 ```
 
-Isso iniciará um servidor HTTP simples na porta 8080.
+This will start a simple HTTP server on port 8080.
 
-2. Testando o Servidor:
-No Windows, abra um navegador e acesse:
+2. Testing the Server:  
+On Windows, open a browser and access:
 ```
     http://192.168.56.101:8080
 ```
 
-O servidor no Kali deverá responder, exibindo uma listagem do diretório.
-Nos logs do terminal do Kali, você verá informações como o endereço IP do cliente (Windows), o horário do acesso e o método HTTP (GET) usado na requisição.
+The server on Kali should respond, displaying a directory listing.  
+In Kali's terminal logs, you will see information like the client's IP address (Windows), access time, and the HTTP method (GET) used in the request.
 
-### 5. Analisando Logs e Explorando Mais
-1. Análise de Logs:
-Observe os logs do servidor HTTP no terminal do Kali para entender os detalhes de cada requisição (IP, data, método, etc.).
+### 5. Analyzing Logs and Exploring Further
 
-2. Explorando com Nmap:
-No Kali, você pode escanear a rede para identificar os hosts conectados:
+1. Log Analysis:  
+Observe the HTTP server logs in Kali's terminal to understand the details of each request (IP, date, method, etc.).
+
+2. Exploring with Nmap:  
+On Kali, you can scan the network to identify connected hosts:
 ```
     sudo nmap -sP 192.168.56.0/24
 ```
-Isso listará todos os dispositivos ativos na LAN virtual.
+This will list all active devices in the virtual LAN.
 
-## Conclusão
-Esta prática demonstra de forma simples e direta como configurar uma LAN virtual utilizando Kali Linux e Windows, possibilitando a:
+## Conclusion
+This practice demonstrates a simple and direct way to configure a virtual LAN using Kali Linux and Windows, enabling:
 
-- Compreensão dos conceitos teóricos de redes locais.
-- Configuração de um ambiente de teste isolado e controlado.
-- Análise prática da comunicação entre dispositivos por meio de pings, execução de servidores HTTP e monitoramento de logs e tráfego.
-- Ao testar esses conceitos na prática, você constrói uma base sólida para aprofundar seus estudos em redes e cibersegurança, integrando ferramentas como Nmap, Wireshark, e outras em seus futuros projetos.
+- Understanding of theoretical concepts of local networks.
+- Configuration of an isolated and controlled test environment.
+- Practical analysis of communication between devices through pings, running HTTP servers, and monitoring logs and traffic.
+- By testing these concepts in practice, you build a solid foundation for further studies in networks and cybersecurity, integrating tools like Nmap, Wireshark, and others in your future projects.
 
-Este arquivo foi criado para auxiliar no entendimento teórico e prático sobre LANs, além de servir como documentação para estudos em redes e cibersegurança.
+This document was created to help with theoretical and practical understanding of LANs and serve as documentation for studies in networks and cybersecurity.
