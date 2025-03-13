@@ -1,46 +1,46 @@
-# Camada 7: Camada de Aplicação
+# Layer 7: Application Layer
 
-A **Camada 7**, também conhecida como **Camada de Aplicação**, é a parte do modelo OSI que interage diretamente com o usuário e os programas. É nela que acontecem as trocas de informações que você vê e usa todos os dias, como acessar sites, enviar e-mails e transferir arquivos.
+The **Application Layer** (Layer 7) is the part of the OSI model that interacts directly with users and programs. It is where the information exchanges you see and use every day take place, such as accessing websites, sending emails, and transferring files.
 
-## O que ela faz?
+## What Does It Do?
 
-- **Comunicação com o Usuário:**  
-  É aqui que os aplicativos (como navegadores, clientes de e-mail, programas de transferência de arquivos) fazem a conexão com a rede para enviar e receber dados.
+- **User Communication:**  
+  This is where applications (such as web browsers, email clients, file transfer programs) connect to the network to send and receive data.
 
-- **Regras para a Comunicação (Protocolos):**  
-  A camada de aplicação usa regras que organizam a forma como os dados são trocados. Alguns exemplos:
-  - **HTTP/HTTPS:** Para acessar páginas na internet.
-  - **FTP:** Para enviar e baixar arquivos.
-  - **SMTP, IMAP, POP3:** Para enviar e receber e-mails.
-  - **DNS:** Para transformar nomes de sites em endereços de internet.
+- **Communication Rules (Protocols):**  
+  The application layer uses rules that organize how data is exchanged. Some examples:
+  - **HTTP/HTTPS:** For accessing web pages.
+  - **FTP:** For uploading and downloading files.
+  - **SMTP, IMAP, POP3:** For sending and receiving emails.
+  - **DNS:** For translating website names into internet addresses.
 
-- **Gerenciamento de Conexões:**  
-  Ela cuida do início e do fim da comunicação entre os aplicativos, garantindo que os dados cheguem de forma organizada.
+- **Connection Management:**  
+  It handles the start and end of communication between applications, ensuring that data is received in an organized manner.
 
-- **Segurança:**  
-  Muitos protocolos na camada de aplicação ajudam a proteger os dados com autenticação e criptografia, deixando a comunicação segura.
+- **Security:**  
+  Many protocols in the application layer help secure data through authentication and encryption, making communication safe.
 
-## Exemplos Práticos
+## Practical Examples
 
-- **Navegação na Web:**  
-  Quando você digita um endereço no navegador, o programa usa o protocolo HTTP/HTTPS para pedir as páginas e exibi-las.
+- **Web Browsing:**  
+  When you type an address into your browser, the program uses the HTTP/HTTPS protocol to request and display the web pages.
 
-- **Envio de E-mails:**  
-  O seu aplicativo de e-mail usa protocolos como SMTP para enviar mensagens e IMAP ou POP3 para recebê-las.
+- **Sending Emails:**  
+  Your email application uses protocols like SMTP to send messages and IMAP or POP3 to receive them.
 
-- **Transferência de Arquivos:**  
-  Programas de FTP utilizam a camada de aplicação para enviar e receber arquivos entre computadores.
+- **File Transfer:**  
+  FTP programs use the application layer to send and receive files between computers.
 
-- **Busca de Endereços (DNS):**  
-  Ao digitar um site, o serviço DNS converte o nome do site em um endereço de internet que o computador entende.
+- **Address Resolution (DNS):**  
+  When you type a website, the DNS service converts the site name into an internet address that the computer understands.
 
-## Resumo
+## Summary
 
-A camada de aplicação é a "face" da rede para o usuário. Ela permite que os aplicativos se conectem e troquem informações de maneira simples e segura, fazendo com que tudo que você faz na internet seja possível.  
+The application layer is the "face" of the network for the user. It allows applications to connect and exchange information simply and securely, making everything you do on the internet possible.
 
 ---
 
-## Aprenda mais
+## Learn More
 
-- *[O que é HTTP?](https://www.cloudflare.com/pt-br/learning/ddos/glossary/hypertext-transfer-protocol-http/)*
-- *[O que é o Protocolo de Transferência de Correio Simples (SMTP)?](https://www.cloudflare.com/pt-br/learning/email-security/what-is-smtp/)*
+- *[What is HTTP?](https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/)*
+- *[What is the Simple Mail Transfer Protocol (SMTP)?](https://www.cloudflare.com/learning/email-security/what-is-smtp/)*
