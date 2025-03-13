@@ -1,28 +1,28 @@
-# Camada 6: Camada de Apresentação (Presentation Layer)
+# Layer 6: Presentation Layer
 
-A **Camada 6** do modelo OSI, também conhecida como **Camada de Apresentação**, é responsável por preparar e formatar os dados para que possam ser usados pela camada de **Aplicação**. Ela garante que os dados sejam apresentáveis e compreensíveis para o sistema receptor.
+The **Presentation Layer** (Layer 6) of the OSI model is responsible for preparing and formatting data so that it can be used by the **Application Layer**. It ensures that data is presentable and understandable to the receiving system.
 
-## Funções Principais da Camada de Apresentação
+## Main Functions of the Presentation Layer
 
-### 1. **Tradução de Dados**
-Quando dois dispositivos de comunicação trocam dados, eles podem usar diferentes formatos ou codificações. A camada de apresentação traduz esses dados para um formato comum, para garantir que o dispositivo receptor possa entender o conteúdo. Exemplos incluem:
-- Conversão de formatos de codificação de texto (de **UTF-16** para **UTF-8**, por exemplo).
-- Conversão de formatos de arquivo (de **JPEG** para **PNG**, por exemplo).
+### 1. **Data Translation**
+When two communication devices exchange data, they may use different formats or encodings. The presentation layer translates this data into a common format to ensure that the receiving device can understand the content. Examples include:
+- Conversion of text encoding formats (from **UTF-16** to **UTF-8**, for example).
+- Conversion of file formats (from **JPEG** to **PNG**, for example).
 
-### 2. **Criptografia e Descriptografia**
-A camada de apresentação também é responsável por garantir a segurança dos dados através da criptografia. Quando os dados são enviados de forma criptografada, a camada 6 criptografa os dados na origem e os descriptografa no destino. Isso ocorre em protocolos como **SSH** e **HTTPS**. Exemplo:
-- **SSH**: Criptografa os dados antes de enviá-los e os descriptografa ao recebê-los.
-- **HTTPS**: Garante que a comunicação web seja segura e os dados sejam ilegíveis para interceptadores.
+### 2. **Encryption and Decryption**
+The presentation layer is also responsible for ensuring data security through encryption. When data is sent in an encrypted form, Layer 6 encrypts the data at the source and decrypts it at the destination. This occurs in protocols like **SSH** and **HTTPS**. Example:
+- **SSH**: Encrypts data before sending and decrypts it upon receiving.
+- **HTTPS**: Ensures secure web communication and makes data unreadable to interceptors.
 
-### 3. **Compressão de Dados**
-A camada de apresentação também pode comprimir os dados antes de enviá-los, o que ajuda a reduzir a quantidade de dados a serem transferidos, tornando a comunicação mais eficiente. No lado receptor, a camada 6 descomprime os dados para que possam ser usados pela camada de aplicação. Exemplos incluem:
-- Compressão de arquivos usando **gzip** ou **Brotli**.
-- Compressão de dados em **HTTP/2** para otimizar o tráfego de rede.
+### 3. **Data Compression**
+The presentation layer may also compress data before sending it, which helps reduce the amount of data transferred, making communication more efficient. On the receiving side, Layer 6 decompresses the data so that it can be used by the application layer. Examples include:
+- File compression using **gzip** or **Brotli**.
+- Data compression in **HTTP/2** to optimize network traffic.
 
-## Resumo
-A camada de apresentação tem como papel garantir que os dados que são enviados e recebidos entre dispositivos sejam:
-- **Compreensíveis**, através da tradução entre diferentes formatos.
-- **Seguros**, com a criptografia e descriptografia dos dados.
-- **Otimizada**, com a compressão para reduzir a quantidade de dados transferidos.
+## Summary
+The presentation layer ensures that the data sent and received between devices is:
+- **Understandable**, through the translation between different formats.
+- **Secure**, with encryption and decryption of data.
+- **Optimized**, through compression to reduce the amount of data transferred.
 
-Essa camada atua como um intermediário para garantir que os dados sejam processados de forma adequada antes de serem entregues à camada de aplicação.
+This layer acts as an intermediary to ensure that data is properly processed before being delivered to the application layer.
