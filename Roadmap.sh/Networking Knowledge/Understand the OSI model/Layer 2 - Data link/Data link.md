@@ -1,43 +1,43 @@
-# Camada 2 do Modelo OSI: Enlace de Dados (Data Link)
+# OSI Model Layer 2: Data Link
 
-## O que é a Camada de Enlace de Dados?
+## What is the Data Link Layer?
 
-A Camada de Enlace de Dados é a **segunda camada** do modelo OSI. Ela é responsável por garantir uma **comunicação confiável** entre dispositivos conectados na mesma rede física. Aqui, os dados são organizados em **quadros (frames)** e enviados para a camada física (Camada 1).
-
----
-
-## Principais Funções
-
-- **Endereçamento físico (MAC):** Cada dispositivo possui um endereço MAC (Media Access Control) único, usado para identificação na rede local.
-- **Detecção e correção de erros:** Verifica se os dados foram transmitidos corretamente, usando técnicas como CRC (Cyclic Redundancy Check).
-- **Controle de acesso ao meio:** Decide qual dispositivo pode usar a rede em determinado momento, evitando colisões (CSMA/CD, CSMA/CA).
-- **Encapsulamento de dados:** Organiza os pacotes da Camada 3 (Rede) em quadros (frames) para transmissão.
+The Data Link Layer is the **second layer** of the OSI model. It is responsible for ensuring **reliable communication** between devices connected to the same physical network. Here, data is organized into **frames** and sent to the physical layer (Layer 1).
 
 ---
 
-## Protocolos Associados
+## Key Functions
 
-- **Ethernet:** Protocolo de rede mais comum para LANs.
-- **Wi-Fi (802.11):** Protocolo sem fio para redes locais.
-- **PPP (Point-to-Point Protocol):** Usado para conexões diretas entre dois pontos.
-
----
-
-## Importância da Camada de Enlace
-
-Essa camada é essencial porque cria um canal confiável para a transmissão de dados. Sem ela, haveria mais erros na entrega das informações e dispositivos não conseguiriam se identificar adequadamente.
+- **Physical Addressing (MAC):** Each device has a unique MAC (Media Access Control) address, used for identification on the local network.
+- **Error Detection and Correction:** Checks if the data was transmitted correctly using techniques like CRC (Cyclic Redundancy Check).
+- **Media Access Control:** Decides which device can use the network at a given time, avoiding collisions (CSMA/CD, CSMA/CA).
+- **Data Encapsulation:** Organizes Network Layer (Layer 3) packets into frames for transmission.
 
 ---
 
-## Forma de Praticar
+## Associated Protocols
 
-Aqui vai um exemplo básico de como ver informações da Camada 2 usando comandos de rede:
+- **Ethernet:** The most common protocol for LANs.
+- **Wi-Fi (802.11):** Wireless protocol for local networks.
+- **PPP (Point-to-Point Protocol):** Used for direct connections between two points.
 
 ---
 
-### Ver endereço MAC no Windows:
+## Importance of the Data Link Layer
 
-No terminal, rode:
+This layer is essential because it creates a reliable channel for data transmission. Without it, there would be more errors in data delivery, and devices wouldn’t be able to identify each other properly.
+
+---
+
+## How to Practice
+
+Here’s a basic example of how to view Layer 2 information using network commands:
+
+---
+
+### View MAC Address on Windows:
+
+In the terminal, run:
 
 ```
     ipconfig /all
@@ -45,5 +45,6 @@ No terminal, rode:
 
 ---
 
-## Aprenda mais
-[Data Link Layer in OSI Model](https://www.geeksforgeeks.org/data-link-layer/)
+## Learn More
+
+- [Data Link Layer in OSI Model](https://www.geeksforgeeks.org/data-link-layer/)
